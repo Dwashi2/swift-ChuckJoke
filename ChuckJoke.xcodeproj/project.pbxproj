@@ -3,10 +3,11 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1FB3333DFEF12A03CB0F8BB5 /* Pods_ChuckJoke.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4DEC319100814E8D64359A8A /* Pods_ChuckJoke.framework */; };
 		56064047272A161800E8EA99 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56064046272A161800E8EA99 /* AppDelegate.swift */; };
 		56064049272A161800E8EA99 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56064048272A161800E8EA99 /* SceneDelegate.swift */; };
 		5606404B272A161800E8EA99 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5606404A272A161800E8EA99 /* ViewController.swift */; };
@@ -14,9 +15,13 @@
 		56064051272A161800E8EA99 /* ChuckJoke.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 5606404F272A161800E8EA99 /* ChuckJoke.xcdatamodeld */; };
 		56064053272A162400E8EA99 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 56064052272A162400E8EA99 /* Assets.xcassets */; };
 		56064056272A162400E8EA99 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 56064054272A162400E8EA99 /* LaunchScreen.storyboard */; };
+		56064066272A16E800E8EA99 /* JokeInfoController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56064065272A16E800E8EA99 /* JokeInfoController.swift */; };
+		5606406A272A174200E8EA99 /* JokeInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56064069272A174200E8EA99 /* JokeInfo.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3DB04E295E772D8DB68A5A86 /* Pods-ChuckJoke.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ChuckJoke.release.xcconfig"; path = "Target Support Files/Pods-ChuckJoke/Pods-ChuckJoke.release.xcconfig"; sourceTree = "<group>"; };
+		4DEC319100814E8D64359A8A /* Pods_ChuckJoke.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ChuckJoke.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		56064043272A161800E8EA99 /* ChuckJoke.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ChuckJoke.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		56064046272A161800E8EA99 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		56064048272A161800E8EA99 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -26,6 +31,9 @@
 		56064052272A162400E8EA99 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		56064055272A162400E8EA99 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		56064057272A162400E8EA99 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		56064065272A16E800E8EA99 /* JokeInfoController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JokeInfoController.swift; sourceTree = "<group>"; };
+		56064069272A174200E8EA99 /* JokeInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JokeInfo.swift; sourceTree = "<group>"; };
+		DCDE21C20C850DECCD3AC820 /* Pods-ChuckJoke.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ChuckJoke.debug.xcconfig"; path = "Target Support Files/Pods-ChuckJoke/Pods-ChuckJoke.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,6 +41,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1FB3333DFEF12A03CB0F8BB5 /* Pods_ChuckJoke.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -44,6 +53,8 @@
 			children = (
 				56064045272A161800E8EA99 /* ChuckJoke */,
 				56064044272A161800E8EA99 /* Products */,
+				C1B6AC4695699B403811E261 /* Pods */,
+				EA891A6F7D731C6FA37CAFFC /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -59,15 +70,58 @@
 			isa = PBXGroup;
 			children = (
 				56064046272A161800E8EA99 /* AppDelegate.swift */,
+				56064064272A16A900E8EA99 /* Controller */,
 				56064048272A161800E8EA99 /* SceneDelegate.swift */,
-				5606404A272A161800E8EA99 /* ViewController.swift */,
-				5606404C272A161800E8EA99 /* Main.storyboard */,
+				56064061272A169100E8EA99 /* Model */,
+				56064063272A169700E8EA99 /* View */,
 				56064052272A162400E8EA99 /* Assets.xcassets */,
 				56064054272A162400E8EA99 /* LaunchScreen.storyboard */,
 				56064057272A162400E8EA99 /* Info.plist */,
 				5606404F272A161800E8EA99 /* ChuckJoke.xcdatamodeld */,
 			);
 			path = ChuckJoke;
+			sourceTree = "<group>";
+		};
+		56064061272A169100E8EA99 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				56064069272A174200E8EA99 /* JokeInfo.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		56064063272A169700E8EA99 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				5606404A272A161800E8EA99 /* ViewController.swift */,
+				5606404C272A161800E8EA99 /* Main.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		56064064272A16A900E8EA99 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				56064065272A16E800E8EA99 /* JokeInfoController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		C1B6AC4695699B403811E261 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				DCDE21C20C850DECCD3AC820 /* Pods-ChuckJoke.debug.xcconfig */,
+				3DB04E295E772D8DB68A5A86 /* Pods-ChuckJoke.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		EA891A6F7D731C6FA37CAFFC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				4DEC319100814E8D64359A8A /* Pods_ChuckJoke.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -77,9 +131,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 5606405A272A162400E8EA99 /* Build configuration list for PBXNativeTarget "ChuckJoke" */;
 			buildPhases = (
+				691961A9FB7594D4E12FC5E3 /* [CP] Check Pods Manifest.lock */,
 				5606403F272A161800E8EA99 /* Sources */,
 				56064040272A161800E8EA99 /* Frameworks */,
 				56064041272A161800E8EA99 /* Resources */,
+				773BCB2BD59A628E03A911B4 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -135,6 +191,48 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		691961A9FB7594D4E12FC5E3 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ChuckJoke-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		773BCB2BD59A628E03A911B4 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ChuckJoke/Pods-ChuckJoke-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ChuckJoke/Pods-ChuckJoke-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ChuckJoke/Pods-ChuckJoke-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		5606403F272A161800E8EA99 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -142,6 +240,8 @@
 			files = (
 				5606404B272A161800E8EA99 /* ViewController.swift in Sources */,
 				56064051272A161800E8EA99 /* ChuckJoke.xcdatamodeld in Sources */,
+				5606406A272A174200E8EA99 /* JokeInfo.swift in Sources */,
+				56064066272A16E800E8EA99 /* JokeInfoController.swift in Sources */,
 				56064047272A161800E8EA99 /* AppDelegate.swift in Sources */,
 				56064049272A161800E8EA99 /* SceneDelegate.swift in Sources */,
 			);
@@ -287,6 +387,7 @@
 		};
 		5606405B272A162400E8EA99 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = DCDE21C20C850DECCD3AC820 /* Pods-ChuckJoke.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -305,6 +406,7 @@
 		};
 		5606405C272A162400E8EA99 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3DB04E295E772D8DB68A5A86 /* Pods-ChuckJoke.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;

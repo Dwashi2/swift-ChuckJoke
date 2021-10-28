@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_0" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="ChuckJoke" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="chuck" translatesAutoresizingMaskIntoConstraints="NO" id="nzu-lm-htM">
+                                <rect key="frame" x="0.0" y="0.0" width="390" height="250"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QCV-bn-VHA">
+                                <rect key="frame" x="16" y="258" width="358" height="181"/>
+                                <color key="backgroundColor" red="0.84517258409999996" green="0.79238313439999997" blue="0.70603591200000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="181" id="1va-8k-zoT"/>
+                                    <constraint firstAttribute="height" constant="181" id="Tb8-yL-Isq"/>
+                                    <constraint firstAttribute="width" constant="358" id="dHm-uB-wiJ"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="25"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TcH-EL-Ehf">
+                                <rect key="frame" x="97.666666666666671" y="660" width="194.66666666666663" height="150"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="150" id="j3B-k1-odB"/>
+                                </constraints>
+                                <state key="normal" title="Button" image="chuck3"/>
+                                <connections>
+                                    <action selector="jokeButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Wyu-Ys-JQK"/>
+                                </connections>
+                            </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="6cV-pq-fnN">
+                                <rect key="frame" x="16" y="545" width="154" height="107"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="107" id="dOm-bq-dV3"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" red="0.84517258409999996" green="0.79238313439999997" blue="0.70603591200000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="TcH-EL-Ehf" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="8tg-d9-ZYK"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="6cV-pq-fnN" secondAttribute="trailing" constant="220" id="Hya-Yg-nLG"/>
+                            <constraint firstItem="QCV-bn-VHA" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="I3T-k2-G7o"/>
+                            <constraint firstItem="nzu-lm-htM" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="R0R-am-sH5"/>
+                            <constraint firstItem="TcH-EL-Ehf" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="TvM-Ab-6e9"/>
+                            <constraint firstItem="6cV-pq-fnN" firstAttribute="leading" secondItem="QCV-bn-VHA" secondAttribute="leading" id="Y8G-4Z-3h6"/>
+                            <constraint firstItem="TcH-EL-Ehf" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="97.666666666666686" id="Zfh-Bh-udg"/>
+                            <constraint firstItem="QCV-bn-VHA" firstAttribute="top" secondItem="nzu-lm-htM" secondAttribute="bottom" constant="8" symbolic="YES" id="apv-Hr-vL7"/>
+                            <constraint firstItem="TcH-EL-Ehf" firstAttribute="top" secondItem="6cV-pq-fnN" secondAttribute="bottom" constant="8" symbolic="YES" id="b3I-TL-djD"/>
+                            <constraint firstItem="nzu-lm-htM" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="hQZ-sV-Roz"/>
+                            <constraint firstItem="nzu-lm-htM" firstAttribute="centerX" secondItem="TcH-EL-Ehf" secondAttribute="centerX" id="hfl-Xh-a87"/>
+                            <constraint firstItem="QCV-bn-VHA" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="258" id="z2F-US-gOS"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="gifImage" destination="6cV-pq-fnN" id="fiN-5F-eXo"/>
+                        <outlet property="jokeLabel" destination="QCV-bn-VHA" id="wsw-Wm-7Td"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-147.69230769230768" y="53.317535545023695"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="chuck" width="800" height="600"/>
+        <image name="chuck3" width="468" height="468"/>
+    </resources>
+</document>
