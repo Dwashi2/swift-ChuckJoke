@@ -31,8 +31,7 @@
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 <p float="left">
-  <img src="https://github.com/Dwashi2/movieApp-swift/blob/main/1.png" width="248">
-  <img src="https://github.com/Dwashi2/movieApp-swift/blob/main/2.png" width="248">
+    <img src="https://github.com/Dwashi2/swift-ChuckJoke/blob/main/1.png" width="248">
 </p>
  
  
